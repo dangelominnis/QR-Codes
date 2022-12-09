@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------SEO-Optimization---------------- -->
+    <meta name=“description” content="QR Codes & Tattoos" />
+    <meta name="keywords" content="QR Codes, QR, Codes, Tattoos">
+    <meta name="author" content="QR Codes">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
+    <!-- ----------------SEO-Optimization---------------- -->
+    <title>QR Codes & Tattoos</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Archivo + Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-box">
+                <h1>Brittany. You taught me a lot, but most importantly <span>... you taught me how to have an</span></h1>
+                <!-- <h1>Thank you... <span>for a great class Brittany. You taught me a lot, but most importantly you taught me how to have an eye for design and expand my creativity and imagination to create something new.</span></h1> -->
+                <p>
+                    Scan the next QR code on the 
+                    <a href="index.html">home page</a>
+                    to discover the rest of the secret message.
+
+                </p>
+            </div>
+            <!-- <div class="header-button-box">
+                <div class="header-button">
+                    <a href="#" class="btn-green">View Article</a>
+                </div>
+                <div class="header-button">
+                    <a href="#" class="btn-green-transparent">View PDF</a>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <a href="index.html"><img class="bar__logo" src="img/cryptids-logo-03.png" alt="logo image"></a>
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">menu</i>
+            </label>
+            <nav class="nav">
+                <a class="btn-green" href="index.html">Home</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+            }, {
+                threshold: 0.1
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+</body>
+</html>

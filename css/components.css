@@ -1,0 +1,45 @@
+/* Buttons */
+/* White Button */
+.btn-green {
+  font-family: 'Archivo', sans-serif;
+  background: var(--color-green);
+  color: var(--color-black);
+  border: 2px solid var(--color-green);
+  font-size: 1.25rem;
+  font-weight: 500;
+  /* letter-spacing: .3px; */
+  padding: 1.5rem 3rem;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.btn-green:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.btn-green-transparent {
+  font-family: 'Archivo', sans-serif;
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-green);
+  font-size: 1.25rem;
+  font-weight: 500;
+  /* letter-spacing: .3px; */
+  padding: 1.5rem 3rem;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.btn-green-transparent:hover {
+  background: var(--color-green);
+  color: var(--color-black);
+}
